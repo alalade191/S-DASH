@@ -93,7 +93,8 @@ function UserDrawer({ opened, close }: any) {
                     )}
                   >
                     <figure>{icon}</figure>
-                    <Link href={link}>{name}</Link>
+
+                    <span> {name}</span>
                   </div>
                 ))}
               </div>
@@ -116,7 +117,8 @@ function UserDrawer({ opened, close }: any) {
                     )}
                   >
                     <figure>{icon}</figure>
-                    <Link href={link}>{name}</Link>
+
+                    <span>{name}</span>
                   </div>
                 ))}
               </div>

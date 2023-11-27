@@ -51,7 +51,7 @@ export const TransactionTable = () => {
     queryKey: builder.transaction.lattest_transaction.get(),
     select: ({ data }) => data?.data,
   });
-
+  console.log({ data });
   return (
     <div className="w-full">
       <div className=" p-5 rounded-xl bg-white dark:bg-[#010101]">
@@ -71,7 +71,15 @@ export const TransactionTable = () => {
                   height={34}
                   width={34}
                   alt=""
-                  src={item.charged_by.logo ?? ""}
+                  src={
+                    item.charged_by?.company === "Spotify"
+                      ? "/images/spotify.svg"
+                      : item.charged_by?.company === "Google Cloud"
+                      ? "/images/google.svg"
+                      : item.charged_by?.company === "Adobe XD 2023"
+                      ? "/images/adobe.svg"
+                      : "/images/upwork.svg"
+                  }
                 />
                 <div className="flex flex-col">
                   <h3 className=" font-medium text-xs  text-[#121212] dark:text-white">
