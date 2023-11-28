@@ -1,6 +1,5 @@
 import { Drawer, Group, Button, clsx } from "@mantine/core";
-import { Call, Category, Link, Profile } from "iconsax-react";
-import { Sidebar } from "./sidebar";
+import { Category, Profile } from "iconsax-react";
 import { Logo } from "./logo";
 import { ThemeSwitcher } from "./switcher";
 import { useRouter } from "next/router";
@@ -94,7 +93,7 @@ function UserDrawer({ opened, close }: any) {
                   >
                     <figure>{icon}</figure>
 
-                    <span> {name}</span>
+                    <span className=" dark:text-white"> {name}</span>
                   </div>
                 ))}
               </div>
@@ -118,7 +117,7 @@ function UserDrawer({ opened, close }: any) {
                   >
                     <figure>{icon}</figure>
 
-                    <span>{name}</span>
+                    <span className=" dark:text-white">{name}</span>
                   </div>
                 ))}
               </div>

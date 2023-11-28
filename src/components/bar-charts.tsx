@@ -30,19 +30,6 @@ export const ActivityCharts = () => {
           <article className="pt-4 flex gap-[10px] flex-col">
             <h4 className="text-gray text-sm ">Per Week</h4>
 
-            {/* <Barchart
-              dataArray={[20, 18, 55, 35, 32, 12, 45]}
-              bgColor={[
-                "#876AFE",
-                "#FFBC02",
-                "#876AFE",
-                "#FFBC02",
-                "#876AFE",
-                "#FFBC02",
-                "#876AFE",
-              ]}
-              label={["", "", "", "", "", ""]}
-            /> */}
             <MonthBarchart />
           </article>
           <article className="pt-4 flex gap-[10px] flex-col">

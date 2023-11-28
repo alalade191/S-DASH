@@ -57,18 +57,6 @@ export const WeekBarchart = () => {
     },
   };
 
-  // const config = {
-  //   type: "bar",
-  //   data: data,
-  //   options: {
-  //     scales: {
-  //       y: {
-  //         beginAtZero: true,
-  //         Ticks: false,
-  //       },
-  //     },
-  //   },
-  // };
   return (
     <div>
       <div className="bar w-full h-[100px]">

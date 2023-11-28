@@ -15,7 +15,6 @@ export const Search = () => {
             background: "white",
             borderRadius: rem(8),
             paddingBlock: rem(5),
-            // width: "406px",
             "&::placeholder": {
               color: "#A8A8A8",
               fontWeight: 400,

@@ -26,19 +26,12 @@ export const LanguagePop = () => {
           {[...(locales as string[])].sort().map((locale) => (
             <div
               key={locale}
-              //   locale={locale}
               className="block"
               onClick={() => {
                 setShowModal(false), push("/", "/", { locale });
               }}
             >
-              {locale === "en"
-                ? "English"
-                : locale === "ar"
-                ? "Arabic"
-                : locale === "fr"
-                ? "French"
-                : "Dutsh"}
+              {locale === "en" ? "English" : "French"}
             </div>
           ))}
         </section>

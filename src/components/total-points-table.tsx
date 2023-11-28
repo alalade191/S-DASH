@@ -109,13 +109,12 @@ export const TotalPoint = () => {
       </div>
       <div className=" overflow-auto mx-auto">
         <Table
-          verticalSpacing={16}
+          verticalSpacing={20}
           horizontalSpacing={20}
           className="mx-auto w-full overflow-auto"
         >
           <thead
             style={{
-              // width: "100%"
               borderBottom: "2px solid #121212",
             }}
           >

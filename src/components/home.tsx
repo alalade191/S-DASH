@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
 import { Cards } from "./cards";
 import { TransactionTable } from "./transaction-details-table";
 import { QuickTransfer } from "./quick-tansfer";
 import { TotalPoint } from "./total-points-table";
 import { ActivityChart } from "./activity-chart";
-import LineChart from "./area-chat";
-import { ActivityCharts } from "./bar-charts";
 import { AreaBarChart } from "./area-chart";
 import { AreaChartHeader } from "./area-chart-header";
-import { useRouter } from "next/router";
-import i18nhomeEnglish from "@/locales/en/home_en";
-import i18nhomeFrench from "@/locales/fr/home_fr";
 
 export const Home = () => {
   return (

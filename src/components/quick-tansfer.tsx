@@ -4,7 +4,6 @@ import { VisaCard } from "@/public/icons/visa-card";
 import { useQuery } from "@tanstack/react-query";
 import { Wallet3 } from "iconsax-react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import React from "react";
 
 const cardData = [
@@ -24,11 +23,6 @@ const cardData = [
     card: <VisaCard />,
     details: "3419 Debit Card",
   },
-  //   {
-  //     id: 4,
-  //     card: <MasterCard />,
-  //     details: "3419 Debit Card",
-  //   },
 ];
 export const QuickTransfer = () => {
   const { theme, setTheme } = useTheme();
@@ -38,18 +32,14 @@ export const QuickTransfer = () => {
     select: ({ data }) => data?.data,
   });
 
-  console.log({ data });
   return (
     <div className="p-5 bg-white dark:bg-[#010101] rounded-xl flex flex-col gap-5">
       <div className="flex items-center gap-2 border-b border-[#E3E3E3] w-full  pb-3">
-        {
-          theme === "dark" ? (
-            <Wallet3 color="#ffffff" />
-          ) : (
-            <Wallet3 color="#000000" />
-          )
-          // <Image height={20} width={20} alt="wallet" src="/images/wallet.svg" />
-        }
+        {theme === "dark" ? (
+          <Wallet3 color="#ffffff" />
+        ) : (
+          <Wallet3 color="#000000" />
+        )}
         <h3 className=" font-medium text-base  text-[#121212] dark:text-white">
           Quick Transfer
         </h3>

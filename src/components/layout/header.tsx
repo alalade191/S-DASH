@@ -1,18 +1,14 @@
-import { Internationalization } from "@/internalization";
 import { Avatar, Text } from "@mantine/core";
 import { HambergerMenu, Message } from "iconsax-react";
 import { TbSettings2 } from "react-icons/tb";
-import { IoNotificationsOutline } from "react-icons/io5";
 
 import React from "react";
 import { Search } from "@/search";
-import Image from "next/image";
 import { Notification } from "@/notification";
 import { useTheme } from "next-themes";
 import { NotificationDark } from "@/notification-dark";
 import UserDrawer from "@/drawer";
 import { useDisclosure } from "@mantine/hooks";
-import { SwitchPopover } from "@/popover";
 import { LanguagePop } from "@/language-pop";
 
 export const Header = () => {
@@ -35,7 +31,6 @@ export const Header = () => {
             <div className=" hidden lg:block">
               <LanguagePop />
             </div>
-            {/* {theme === "light" ? <NotificationDark /> : <Notification />} */}
             {theme === "light" ? <NotificationDark /> : <Notification />}
           </div>
           <div className="flex items-center gap-[14px]">

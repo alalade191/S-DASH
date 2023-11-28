@@ -4,8 +4,8 @@ import React from "react";
 
 export const AreaChartHeader = () => {
   return (
-    <div className="lg:flex items-center lg:justify-between flex-col space-y-4 lg:space-y-0">
-      <section className="flex gap-6 w-full justify-between">
+    <div className="lg:flex items-center lg:justify-between  space-y-4 lg:space-y-0">
+      <section className="flex gap-6 justify-between lg:justify-normal">
         <article className="flex gap-[10px] items-center">
           <h3 className="text-[#444] text-base dark:text-white">Salary</h3>
           <span className="bg-[#876AFE] w-[18px] h-[18px] rounded-[5px]"></span>
@@ -15,7 +15,7 @@ export const AreaChartHeader = () => {
           <span className=" w-[18px] bg-[#FFBC02] h-[18px] rounded-[5px]"></span>
         </article>
       </section>
-      <section className="flex gap-4">
+      <section className="flex gap-4 justify-between">
         <DateInput
           label={
             <span className="text-gray text-xs/168 dark:text-white">From</span>
